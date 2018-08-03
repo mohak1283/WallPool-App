@@ -20,3 +20,4 @@ Search -> If not able to find your wallpapers in different categories?
 then we have got the search option also, from where you can search wallpapers by entering a specific keyword.
 
 Get on Google Play Store
+[https://play.google.com/store/apps/details?id=com.mohak.wallpaperapp](url)
