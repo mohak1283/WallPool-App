@@ -30,7 +30,7 @@ import java.util.List;
  */
 public class SearchPhotosFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Image>> {
 
-    private static String BASE_URL = "https://pixabay.com/api/?key=8320048-ec914b55867528fe122a6c5dd&image_type=photo&per_page=200&q=";
+    private static String BASE_URL = "https://pixabay.com/api/?key=YOUR_API_KEY&image_type=photo&per_page=200&q=";
     private static String FINAL_URL;
     private TextView errorMessageTextView;
     private TextView errorMessageTextViewTwo;
