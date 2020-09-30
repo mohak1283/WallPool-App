@@ -28,7 +28,7 @@ import java.util.List;
 
 public class DetailPhotoCategoriesActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<Image>> {
 
-    private static final String BASE_URL = "https://pixabay.com/api/?key=YOUR_API_KEY&image_type=photo&per_page=200&category=";
+    private static final String BASE_URL = "https://pixabay.com/api/?key=abb421feccb501c53657b2f464cb49103ff0111dfed7854413e0f4863c673992&image_type=photo&per_page=200&category=";
     private static  String FINAL_URL;
     private ImageAdapter mImageAdapter;
     private List<Image> images = new ArrayList<>();

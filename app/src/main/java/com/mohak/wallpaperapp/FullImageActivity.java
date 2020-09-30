@@ -114,10 +114,10 @@ public class FullImageActivity extends AppCompatActivity {
                     })
                     .into(imageView);
             errorMessage.setVisibility(View.GONE);
-            Toast.makeText(getBaseContext(), "Loading images pls wait", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), "Loading images please wait", Toast.LENGTH_SHORT).show();
         } else {
             errorMessage.setVisibility(View.VISIBLE);
-            Toast.makeText(getBaseContext(), "Pls check your internet connection", Toast.LENGTH_LONG).show();
+            Toast.makeText(getBaseContext(), "Please check your internet connection", Toast.LENGTH_LONG).show();
         }
         //progressBar.setVisibility(View.VISIBLE);
       //  progressBar.setVisibility(View.GONE);
@@ -128,7 +128,7 @@ public class FullImageActivity extends AppCompatActivity {
         setButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                progressBar.setVisibility(View.VISIBLE);
                 // Create WallpaperManager instance
                 Glide.with(getBaseContext())
                         .load(largeImageUrl)
@@ -146,6 +146,8 @@ public class FullImageActivity extends AppCompatActivity {
                                     Toast.makeText(getBaseContext(), "Wallpaper Set", Toast.LENGTH_LONG).show();
                                     progressBar.setVisibility(View.GONE);
                                 } catch (IOException e) {
+                                    Toast.makeText(getBaseContext(), "an error occurred", Toast.LENGTH_LONG).show();
+                                    progressBar.setVisibility(View.GONE);
                                     e.printStackTrace();
                                 }
                             }
@@ -235,7 +237,6 @@ public class FullImageActivity extends AppCompatActivity {
          * @param bitmap The result of the operation computed by {@link #doInBackground}.
          * @see #onPreExecute
          * @see #doInBackground
-         * @see #onCancelled(Object)
          */
         @Override
         protected void onPostExecute(Bitmap bitmap) {

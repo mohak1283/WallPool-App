@@ -31,7 +31,7 @@ public class AllPhotosFragment extends Fragment implements LoaderManager.LoaderC
 
 //    private static final String REQUEST_URL = "https://api.unsplash.com/photos/?client_id=abb421feccb501c53657b2f464cb49103ff0111dfed7854413e0f4863c673992&per_page=100";
 
-    private static final String REQUEST_URL ="https://pixabay.com/api/?key=YOUR_API_KEY&image_type=photo&per_page=200";
+    private static final String REQUEST_URL ="https://pixabay.com/api/?key=abb421feccb501c53657b2f464cb49103ff0111dfed7854413e0f4863c673992&image_type=photo&per_page=200";
 
     private ImageAdapter mImageAdapter;
     private List<Image> images = new ArrayList<>();
